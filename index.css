@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dacafb;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 693px;
+    background-image: url(background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#home h1 {
+    text-align: center;
+}
+
+#home h2, #gallery h2, #contact h2, #follow h2 {
+    text-align: center;
+}
+
+#about img {
+    height: 320px;
+    width: 320px;
+}
+
+#gallery img {
+    width: 230px;
+    height: 230px;
+}
+
+#contact form {
+    text-align: center;
+}
+
+footer {
+    background-color: #8b51f5;
+    height: 85px;
+}
