@@ -1,7 +1,8 @@
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     background-color: #dacafb;
+    min-width: 800px;
 }
 
 header {
@@ -53,10 +54,6 @@ nav li a {
     width: 320px;
 }
 
-#about {
-    display: grid;
-    
-}
 
 #about h2 {
     font-family: "ABeeZee-Regular";
