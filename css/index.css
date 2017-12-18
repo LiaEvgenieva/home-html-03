@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dacafb;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 693px;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #000000;
+	font-family: "ABeeZee-Regular";
+}
+
+#home h1 {
+    text-align: center;
+    font-family: "Cookie-Regular";
+    font-size: 100px;
+}
+
+#home h2 {
+    text-align: center;
+    font-family: "Cookie-Regular";
+    font-size: 60px;
+}
+
+#gallery h2, #contact h2, #follow h2 {
+    text-align: center;
+    font-family: "Cookie-Regular";
+    font-size: 50px;
+}
+
+#about img {
+    height: 320px;
+    width: 320px;
+}
+
+#about h2 {
+    font-family: "ABeeZee-Regular";
+}
+
+#about p {
+    font-family: "ABeeZee-Regular";
+}
+
+#gallery img {
+    width: 230px;
+    height: 230px;
+}
+
+#contact form {
+    text-align: center;
+}
+
+#contact input {
+    font-family: "ABeeZee-Regular";
+}
+
+footer {
+    background-color: #8b51f5;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer span {
+    font-family: "ABeeZee-Regular";
+    font-size: 20px;
+}
+
+@font-face {
+font-family: "ABeeZee-Regular";  
+src: url("../fonts/ABeeZee-Regular.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ }
+
+@font-face{
+font-family: "Cookie-Regular";
+src: url("../fonts/Cookie-Regular.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+
+}

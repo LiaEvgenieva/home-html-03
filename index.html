@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,19 +18,16 @@
             </ul>
         </nav>
         
+        <section id="home">
+             <h1>Julie Sava</h1>
+             <h2>My Own Blog</h2>
+        </section>
     </header>
     
     <main>
         
-        <section id="home">
-            
-             <h1>Julie Sava</h1>
-             <h2>My Own Blog</h2>
-        
-        </section>
-        
         <section id="about">
-            <img src="my-photo.jpg">
+            <img src="images/my-photo.jpg">
             <h2>About me</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, 
@@ -42,42 +38,55 @@
         
         <section id="gallery">
             <h2>Photo gallery</h2>
-            <img src="lviv-wall.jpg">
-            <img src="lviv-street.jpg">
-            <img src="lviv-summer.jpg">
-            <img src="lviv-lake.jpg">
-            <img src="niko-lake.jpg">
-            <img src="odessa-winter.jpg">
-            <img src="old-lviv.jpg">
-            <img src="odessa-sea.jpg">
-            <img src="niko-street.jpg">
+            <img src="images/lviv-wall.jpg">
+            <img src="images/lviv-street.jpg">
+            <img src="images/lviv-summer.jpg">
+            <img src="images/lviv-lake.jpg">
+            <img src="images/niko-lake.jpg">
+            <img src="images/odessa-winter.jpg">
+            <img src="images/old-lviv.jpg">
+            <img src="images/odessa-sea.jpg">
+            <img src="images/niko-street.jpg">
         </section>
         
         <section id="contact">
             <h2>Contact me</h2>
-            <form>
+            <form id="contact-form">
                 <input type="text" name="name" value="Name" required/>
                 <input type="email" name="email" value="Email" required/>
                 <br>
-                <input type="textarea" value="Your text" required/>
+                <input type="textarea" value="Your text"/>
                 <br>
                 <input type="submit" value="Send"/>
             </form>
+            
+            <dialog id="thank-dialog">
+                <p>Thank you for contacting us!</p>
+            </dialog>    
+            <dialog id="error-dialog">
+                <p>Sorry, an error has occured!</p>
+            </dialog>
+            
         </section>
         
         <section id="follow">
             <h2>Follow me</h2>
-            <img src="instagram.png">
-            <img src="facebook.png">
-            <img src="skype.png">
+            <a href="https://www.instagram.com/lia_evgenieva/"><img src="images/instagram.png"></a>
+            <a href="https://www.facebook.com/juli.fedorovich"><img src="images/facebook.png"></a>
+            <img src="images/skype.png">
         </section>
+    
     </main>
     
     <footer>
-        
         <span>Julie Sava</span>
         <span> © All rights reserved</span>
-        
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/feedback_form.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
