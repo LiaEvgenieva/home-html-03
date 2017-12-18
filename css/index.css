@@ -53,6 +53,11 @@ nav li a {
     width: 320px;
 }
 
+#about {
+    display: grid;
+    
+}
+
 #about h2 {
     font-family: "ABeeZee-Regular";
 }
