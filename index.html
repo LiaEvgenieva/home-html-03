@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Document</title>
+    <title>Julie Sava</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -27,37 +27,43 @@
     <main>
         
         <section id="about">
-            <img src="images/my-photo.jpg" alt="Julie Sava">
-            <h2>About me</h2>
+            <div class="about-img">
+                <img src="images/my-photo.jpg" alt="Julie Sava">
+            </div>
+            <div class="about-text">
+                <h2>About me</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, 
                 vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, 
                 ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique.
             </p>
+            </div>
         </section>
         
         <section id="gallery">
             <h2>Photo gallery</h2>
-            <img src="images/lviv-wall.jpg" alt="lviv-wall">
-            <img src="images/lviv-street.jpg" alt="lviv street">
-            <img src="images/lviv-summer.jpg" alt="summer in lviv">
-            <img src="images/lviv-lake.jpg" alt="lviv lake">
-            <img src="images/niko-lake.jpg" alt="niko lake">
-            <img src="images/odessa-winter.jpg" alt="odessa winter">
-            <img src="images/old-lviv.jpg" alt="old lviv">
-            <img src="images/odessa-sea.jpg" alt="odessa sea">
-            <img src="images/niko-street.jpg" alt="niko street">
+            <div>
+                <img src="images/lviv-wall.jpg" alt="lviv-wall">
+                <img src="images/lviv-street.jpg" alt="lviv street">
+                <img src="images/lviv-summer.jpg" alt="summer in lviv">
+                <img src="images/lviv-lake.jpg" alt="lviv lake">
+                <img src="images/niko-lake.jpg" alt="niko lake">
+                <img src="images/odessa-winter.jpg" alt="odessa winter">
+                <img src="images/old-lviv.jpg" alt="old lviv">
+                <img src="images/odessa-sea.jpg" alt="odessa sea">
+                <img src="images/niko-street.jpg" alt="niko street">
+            </div>
         </section>
         
         <section id="contact">
             <h2>Contact me</h2>
             <form id="contact-form">
-                <input type="text" name="name" placeholder="Name" required/>
-                <input type="email" name="email" placeholder="Email" required/>
+                <input class="input" type="text" name="name" placeholder="Name" required/>
+                <input class="input" type="email" name="email" placeholder="Email" required/>
                 <br>
-                <input type="textarea" placeholder="Your text"/>
+                <input class="textarea" type="textarea" placeholder="Your text"/>
                 <br>
-                <input type="submit" value="Send"/>
+                <button type="submit" value="Send">Send</button>
             </form>
             
             <dialog id="thank-dialog">
@@ -71,9 +77,11 @@
         
         <section id="follow">
             <h2>Follow me</h2>
-            <a href="https://www.instagram.com/lia_evgenieva/" alt="inatsgram"><img src="images/instagram.png"></a>
-            <a href="https://www.facebook.com/juli.fedorovich" alt="facebook"><img src="images/facebook.png"></a>
-            <img src="images/skype.png" alt="skype">
+            <div>
+                <a href="https://www.instagram.com/lia_evgenieva/" alt="inatsgram"><img src="images/instagram.png"></a>
+                <a href="https://www.facebook.com/juli.fedorovich" alt="facebook"><img src="images/facebook.png"></a>
+                <img src="images/skype.png" alt="skype">
+            </div>
         </section>
     
     </main>
