@@ -1,8 +1,7 @@
 body {
-    margin: 0;
+    max-width: 1000px;
+    margin: auto;
     padding: 0;
-    background-color: #dacafb;
-    min-width: 375px; 
 }
 
 header {
@@ -12,8 +11,9 @@ header {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-color: #dacafb;
 }
-
 
 header ul {
     margin: 0;
@@ -23,6 +23,15 @@ header ul {
 
 header ul li{
     display: inline;
+}
+
+header ul li a:hover {
+    color: #8b51f5;
+   } 
+
+nav {
+    max-width: 800px;
+    margin: auto;
 }
 
 nav ul {
@@ -43,6 +52,7 @@ nav li a {
     text-align: center;
     font-family: "Cookie-Regular";
     font-size: 100px;
+    margin-top: 150px;
 }
 
 #home h2 {
@@ -51,19 +61,18 @@ nav li a {
     font-size: 60px;
 }
 
-main {
-    max-width: 1000px;
-    margin: auto;
-}
-
 #gallery h2, #contact h2, #follow h2 {
     text-align: center;
     font-family: "Cookie-Regular";
     font-size: 50px;
+    margin-top: 0;
 }
 
 #about {
     display: flex;
+    background-color: #dacafb;
+    height: 400px;
+    justify-content: space-around;
 }
 
 .about-img {
@@ -81,8 +90,8 @@ main {
 .about-text {
     justify-content: flex-end;
     height: 310px;
-    width: 500px;
-    margin-left: 150px;
+    width: 520px;
+
 }
 
 #about h2 {
@@ -98,42 +107,70 @@ main {
     text-align: right;
 }
 
+#gallery {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #dacafb;
+    padding-top: 40px;
+}
+
+#gallery h2 {
+    margin-bottom: 0;
+}
+
 #gallery img {
     width: 230px;
     height: 230px;
     margin: 35px 35px;
 }
 
+#contact {
+    background-color: #dacafb;
+    padding-top: 40px;
+}
+
 #contact form {
     text-align: center;
 }
 
-#contact input, #contact button {
+#contact input, #contact textarea, #contact button {
     font-family: "ABeeZee-Regular";
-    border: solid #c0c0c0 3px;
     border-radius: 7px;
 }
 
 .input {
-    width: 200px;
+    width: 276px;
     height: 25px;
     margin: 0 21px;
+    border: solid #c0c0c0 1px;
 }
 
-.textarea {
-    width: 450px;
+textarea {
+    width: 600px;
     height: 100px;
     margin: 30px 0 0 0;
+    border: solid #c0c0c0 1px;
+    font-size: 13px;
+    line-height: 2;
 }
 
-#contact button {
-    width: 100px;
+.button {
+    width: 200px;
     background-color: #8b51f5;
     color: #fafafa;
     border: none;
     border-radius: 5px;
     margin-top: 30px;
     height: 30px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 1px 1px 7px #8b51f5;
+}
+
+#follow {
+    background-color: #dacafb;
+    padding-top: 40px;
 }
 
 #follow div {
@@ -160,6 +197,30 @@ footer span {
     font-family: "ABeeZee-Regular";
     font-size: 20px;
 }
+
+@media (max-width: 840px) {
+
+   #about {
+       display: flex;
+       flex-direction: column;
+       height: 800px;
+       align-items: center;
+       justify-content: flex-start;
+   }
+   
+   .about-img {
+       margin-left: 0;
+
+   }
+   
+   .about-text {
+       margin: 10px 10px 10px 10px;
+       width: 300px;
+       align-items: center;
+   }
+}
+
+
 
 @font-face {
 font-family: "ABeeZee-Regular";  
