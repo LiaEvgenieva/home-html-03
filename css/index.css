@@ -2,6 +2,7 @@ body {
     max-width: 1000px;
     margin: auto;
     padding: 0;
+    min-width: 450px;
 }
 
 header {
@@ -46,6 +47,17 @@ nav li a {
 	text-decoration: none;
 	color: #000000;
 	font-family: "ABeeZee-Regular";
+}
+
+#menu-icon {
+    display: none;
+    text-decoration: none;
+}
+
+#menu-icon img {
+    width: 40px;
+    height: 40px; 
+    margin: 20px 0 20px 20px;
 }
 
 #home h1 {
@@ -121,7 +133,7 @@ nav li a {
 #gallery img {
     width: 230px;
     height: 230px;
-    margin: 35px 35px;
+    margin: 35px;
 }
 
 #contact {
@@ -141,14 +153,14 @@ nav li a {
 .input {
     width: 276px;
     height: 25px;
-    margin: 0 21px;
+    margin: 0 21px 15px 21px;
     border: solid #c0c0c0 1px;
 }
 
 textarea {
     width: 600px;
     height: 100px;
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
     border: solid #c0c0c0 1px;
     font-size: 13px;
     line-height: 2;
@@ -171,6 +183,10 @@ input:focus, textarea:focus {
 #follow {
     background-color: #dacafb;
     padding-top: 40px;
+}
+
+#follow h2 {
+    margin-bottom: 30px;
 }
 
 #follow div {
@@ -220,7 +236,69 @@ footer span {
    }
 }
 
+@media (max-width: 666px) {
 
+    #menu-icon {
+        display: inline-block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav .nav-menu,
+    header nav:active .nav-menu {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #dacafb;
+        border: 1px solid #8b51f5;
+        top: 75px;
+        width: 30%;
+        border-radius: 3px;
+        height: 240px;
+        text-align: left;
+    }
+
+    nav .nav-menu li {
+        text-align: right;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        border: none;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    #gallery .img img {
+        width: 300px;
+        height: 300px;
+        margin: 20px; 
+    }
+    
+    #follow img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #contact #contact-form .input {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    
+    #contact #message {
+        width: 400px;
+        margin-top: 0;
+    }
+    
+    #contact #contact-form .button {
+        margin-top: 20px;
+    }
+    
+}
 
 @font-face {
 font-family: "ABeeZee-Regular";  
